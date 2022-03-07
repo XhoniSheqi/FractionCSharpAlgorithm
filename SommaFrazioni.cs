@@ -37,7 +37,7 @@ namespace ConsoleApp
 
         // FUNZIONE CALCOLA MCM
 
-        public int CalcolaMcm(int b, int d)
+        public int CalcolaMcm()
         {
             return (b * d) / CalcolaMcd(b, d);
         }
@@ -46,8 +46,8 @@ namespace ConsoleApp
 
         public string CalcolaSommaFrazioni()
         {
-            e = (CalcolaMcm(b, d) / b * a) + (CalcolaMcm(b, d) / d * c);
-            f = CalcolaMcm(b, d);
+            e = (CalcolaMcm() / b * a) + (CalcolaMcm() / d * c);
+            f = CalcolaMcm();
             string res = "La frazione ottenuta e' : " + e + " / " + f;
             return res;
         }
